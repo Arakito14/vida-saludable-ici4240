@@ -1,0 +1,28 @@
+#espacio{
+    padding: 1%;
+}
+
+a {
+    font-size: 160%;
+    color :black;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+table{
+    
+    margin-left: 30%;
+}
+
+
+td  {
+    vertical-align:middle;
+    height: 100px;
+    width: 250px;
+    border: 5px solid black;
+  }
+  td:hover{
+      background-color: red;
+      height: 60px;
+  }
+  
