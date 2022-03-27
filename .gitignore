@@ -39,4 +39,5 @@ Thumbs.db
 # IDE generated files #
 ######################
 .idea
+.vs
 .vscode
