@@ -1,0 +1,38 @@
+nav ul{
+    list-style-type:none;
+    display: flex;
+}
+
+nav ul li{
+    color:rgb(210, 205, 255);
+    margin:5px 2px 2px 5px;
+    width:150px;
+   /* margin-top:2px;
+    margin-right:2px;
+    margin-bottom:2px;
+    margin-left:2px;*/
+    flex-wrap: nowrap;
+}
+
+li a{
+  text-decoration:none;
+  color:black;
+  font-size: 22px;
+}
+/*
+li a:hover{
+    background-color: blue;
+}*/
+nav li:hover{
+  background-color: blueviolet;
+}
+ul li img{
+  width:150px;  
+}
+
+ul li p{
+    color:black;
+}
+
+
+
