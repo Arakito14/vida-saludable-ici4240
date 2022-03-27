@@ -1,5 +1,5 @@
-TODO
-- Realizar funcionalidades.
-- Paguina web de ejercicios.html (MATI)
-- Paguina web de ??.html (NICO).
-- Guardar fuentes adecuadamente en README.md.
+TODO Realizar funcionalidades.
+TODO Paguina web de ejercicios.html (MATI)
+TODO Paguina web de ??.html (NICO).
+TODO Guardar fuentes adecuadamente en README.md.
+TODO ¿Recomendación de una rutina a seguir?

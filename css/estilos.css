@@ -1,10 +1,46 @@
 /*GENERAL STYLE*/
+h1{
+    font-weight:bold;
+    text-decoration:none;
+    color:green;
+    font-size:30px;
+    margin:auto;
+}
+
+h2{
+  font-weight:bold;
+  text-decoration:none;
+  color:blueviolet;
+  font-size:28px;
+  margin-bottom:10px;
+}
+
+h3{
+  font-weight:bold;
+  text-decoration:none;
+  color:blue;
+  font-size:20px;
+  margin-bottom:10px;
+}
+
+p{
+  font-size:18px;
+  margin:auto;
+  margin-bottom:8px;
+}
+
+footer{
+    text-decoration:none;
+    color:black;
+    font-size:12px;
+}
+
 nav ul{
-    text-align:center;
+    text-align:left;
     list-style-type:none;
     display: flex;
     max-width:900px;
-    margin:auto;
+    margin-bottom:10px;
 }
 
 nav ul li{
@@ -16,10 +52,12 @@ nav ul li{
     flex-wrap: nowrap;
 }
 
-h1{
-    text-decoration:none;
-    color:green;
-    font-size:24px;
+li{
+    list-style-type: none;
+}
+
+nav li:hover{
+  background-color: blueviolet;
 }
 
 li a{
@@ -28,32 +66,12 @@ li a{
   font-size: 20px;
 }
 
-h2{
-    text-decoration:none;
-    color:blueviolet;
-    font-size:19px;
-}
-
-nav li:hover{
-  background-color: blueviolet;
-}
-
 ul li img{
     width: 150px;
 }
 
 ul li p{
     color:brown;
-}
-
-li{
-    list-style-type: none;
-}
-
-footer{
-    text-decoration:none;
-    color:black;
-    font-size:12px;
 }
 
 /*WEBSITE SPECIFIC STYLES*/
@@ -95,5 +113,9 @@ footer{
     font-family: Georgia, 'Times New Roman', Times, serif;
     max-width:960px;
     margin:auto;
+}
+
+#ejercicios li a:hover{
+    background-color: blueviolet;
 }
 

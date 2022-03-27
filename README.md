@@ -17,27 +17,40 @@
 
 <h3> Recursos </h3>
 Validador web
-https://validator.w3.org/
+
+- https://validator.w3.org/
 
 Reset CSS para que funcione con todos los navegadores
-https://meyerweb.com/eric/tools/css/reset/
+- https://meyerweb.com/eric/tools/css/reset/
 
 <h3> Paguinas </h3>
 HATARAKU SAIBU! Cells at work
-https://myanimelist.net/anime/37141/Hataraku_Saibou_TV/
 
-Ejercicios
-https://www.youtube.com/c/ATHLEANXEspa%C3%B1ol
+- https://myanimelist.net/anime/37141/Hataraku_Saibou_TV/
 
-Ejercicios En Casa cortos 5,10,15min
-https://www.youtube.com/c/BullyJuice
+Youtubers
+- https://www.youtube.com/c/ATHLEANXEspa%C3%B1ol
+- https://www.youtube.com/c/VadymCavaleraCalisthenics
+- https://www.youtube.com/c/BullyJuice
 
-Playlist Ejercicios en casa sin maquinas
-https://www.youtube.com/watch?v=oAPCPjnU1wA&list=PLjngT6yRRZHPsjj-CIduSL9FpclppM9qm&ab_channel=BullyJuice
+Rutinas Principianets
+- https://www.youtube.com/watch?v=_q_-adYzkh0
+- https://www.youtube.com/watch?v=-lO1pgoES74
+- https://www.youtube.com/watch?v=BQAtwmaXbzM
+- https://www.youtube.com/watch?v=6auB47_9Kq4
+- https://www.youtube.com/watch?v=uKEPTDLgSWs
+
+Rutinas mas intensas
+- https://www.youtube.com/watch?v=hTKOciDDbyU
+- https://www.youtube.com/watch?v=0EdErFGAFK4
+- https://www.youtube.com/watch?v=rCx4p0VpK80
+- https://www.youtube.com/watch?v=HD8TWGR4DN0
+- 
 
 App
-https://play.google.com/store/apps/details?id=homeworkout.homeworkouts.noequipment&hl=es_CL&gl=US
+- https://play.google.com/store/apps/details?id=homeworkout.homeworkouts.noequipment&hl=es_CL&gl=US
 
-https://www.freepik.es/search?format=search&query=fitness
-https://www.healthdirect.gov.au/creating-healthy-habits
-https://www.healthyhabitsstl.com/pagedale-page-ave-location
+Alimentación
+- https://www.freepik.es/search?format=search&query=fitness
+- https://www.healthdirect.gov.au/creating-healthy-habits
+- https://www.healthyhabitsstl.com/pagedale-page-ave-location
