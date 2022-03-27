@@ -1,8 +1,19 @@
+body h1{
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+  font-size:50px;
+  font-family:'Olive Village';
+  color:black;
+  font-weight:bold;
+}
+
 nav ul{
     text-align:center;
     list-style-type:none;
     display: flex;
-    margin-left:445px;
+    max-width:900px;
+    margin:auto;
 }
 
 nav ul li{
@@ -57,7 +68,7 @@ ul li p{
   text-align:center;
   font-weight:bold; 
   text-decoration:none;
-  color:red;
+  color:black;
   font-size:28px;
   margin-bottom:30px;
 }
@@ -68,5 +79,22 @@ ul li p{
   width:600px;
 }
 
+#faq{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  max-width:960px;
+  margin:auto;
+}
+
+#faq ul li{
+  color:black;
+  font-size:24px;
+  margin-bottom:30px;
+}
+
+#faq ul p{
+  color:black;
+  font-size:18px;
+  margin-bottom:30px;
+}
 
 
