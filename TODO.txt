@@ -1,0 +1,4 @@
+TODO Realizar funcionalidades.
+TODO Paguina web de ??.html (NICO).
+TODO Guardar fuentes adecuadamente en README.md.
+TODO ¿Recomendación de una rutina a seguir?
