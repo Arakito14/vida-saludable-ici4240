@@ -49,20 +49,17 @@ footer{
 }
 
 nav ul{
-    text-align:left;
+    text-align:center;
     list-style-type:none;
     display: flex;
     max-width:900px;
     margin:auto;
-    margin-bottom:10px;
 }
 
 nav ul li{
     color:rgb(210, 205, 255);
-    display:flex;
-    float:left;
-    margin:2px 2px 2px 2px;
-    width:120px;
+    margin:40px 2px 40px 5px;;
+    width:180px;
     flex-wrap: nowrap;
 }
 
