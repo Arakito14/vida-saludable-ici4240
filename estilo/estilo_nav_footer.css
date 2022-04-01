@@ -67,12 +67,11 @@ footer{
 }
 /* navegador*/
 #nave ul{
-    font-size: x-large;
-    float:center;
+    font-size: large;
     list-style-type:none;
     max-width:1200px;
     margin-bottom:10px;
-    padding-left:23%;
+    padding-left:3%;
 }
 
 #nave  li{
