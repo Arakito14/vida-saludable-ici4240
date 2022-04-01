@@ -8,7 +8,7 @@
 - Mauricio Diaz
 
 <h3> Drive compartido del proyecto <h3>
-- https://drive.google.com/drive/folders/1e94xEY_ULXDHBaQU6R9Gdvj5JX339EAC?usp=sharing
+https://drive.google.com/drive/folders/1e94xEY_ULXDHBaQU6R9Gdvj5JX339EAC?usp=sharing
 
 <h3> Objetivo </h3>
 - Dar accebilidad a informacion que puede ser util a personas que padescan alguna de las enfermedades mas comunes en nuestro pais , y tratar de mejorarles un poco su diad dia.
