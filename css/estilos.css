@@ -44,9 +44,21 @@ footer{
   text-decoration:none;
   color:black;
   font-size:12px;
-  margin:50px auto auto auto;
+  position:relative;
+  margin:100px auto auto auto;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+#footindex{
+  max-width:960px;
+  text-decoration:none;
+  color:black;
+  font-size:12px;
+  position:relative;
+  margin:1200px auto auto auto;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 
 nav ul{
     text-align:center;
@@ -61,6 +73,8 @@ nav ul li{
     margin:40px 2px 40px 5px;;
     width:180px;
     flex-wrap: nowrap;
+    border:solid black;
+    padding:10px;
 }
 
 li{
@@ -77,12 +91,41 @@ li a{
   font-size: 20px;
 }
 
-ul li img{
-    width: 150px;
-}
-
 ul li p{
     color:brown;
+}
+
+/*slider*/
+
+#gallery ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none inside;
+}
+#gallery ul.slider {
+  position:relative; 
+}
+#gallery ul.slider li {
+  opacity: 0;
+  transition: opacity .5s;
+  position: absolute;
+  left: 500px;
+  top: 0px;
+  margin:50px;
+  padding:50px;
+ /* border:2px solid red;*/
+  background:#fff;
+}
+#gallery ul.slider li:first-child {
+  opacity: 1;
+}
+#gallery ul.slider li:target{
+  opacity: 1;
+}
+#gallery nav {
+  position:relative;
+  top: 0px;
+  left:630px;
 }
 
 /*WEBSITE SPECIFIC STYLES*/
@@ -175,4 +218,172 @@ ul li p{
 
 #ejercicios li a:hover{
     background-color: blueviolet;
+}
+
+
+/*Enfermedades*/
+
+
+
+#sidebarL{
+  float:left ;
+  width: 400px;
+  border: solid white 10px;
+  height: 1000px;
+}
+
+
+/* sidebar derecho*/
+#sidebarR{
+ padding-top: 10%;
+ float:right ;
+ /*background-color: black; */
+ width: 400px;
+ border: solid white 10px;
+ height: 1000px;
+}
+#sidebarR div{
+ padding-left: 5%;
+ position: fixed;
+}
+#sidebarR ul{
+ 
+ border:solid black 2px ;
+ width: 250px;
+ max-height: fit-content;
+}
+
+#sidebarR ul li {
+ 
+ text-align:center;
+ margin :5px; 
+ padding-bottom:2%;
+ border: solid 3px;
+}
+
+#sidebarR a{
+ color:black;
+ margin: 10px;
+ text-decoration: none;
+ font-size: 20px;
+}
+#sidebarR li:hover{
+
+ background-color: red;
+}
+
+#sidebarR a:hover
+{
+ color:white;
+}
+
+/* sidebar derecho*/
+
+
+#menu_enf{
+
+  width: 80%;
+
+}
+#menu_enf table{
+  margin-left: 30%;
+  text-align: center;
+}
+#espacio{
+  padding: 1%;
+}
+
+
+#menu_enf td  {
+  vertical-align:middle;
+  height: 100px;
+  width: 250px;
+  border: 3px solid black;
+}
+#menu_enf td:hover{
+   
+    background-color: red;
+    height: 60px;
+}
+
+
+#menu_enf a {
+  font-size: 160%;
+  color :black;
+  font-weight:bold;
+  text-decoration: none;
+}
+#menu_enf a:hover{
+
+  color: white;
+
+}
+
+#medio {
+  padding-top: 1%;
+  display: inline-block;
+  width: 1055px;
+}
+
+#medio ul {
+  font-size: 25px;
+  list-style-type:square;
+  padding-left: 5%;
+  padding-bottom: 2%;
+
+}
+#medio h2{
+  text-align: center ; 
+  font-size: 220%;
+  padding-bottom: 15px;
+
+}
+
+#medio img{
+  border: 15px solid;
+   color: orange;
+}
+
+
+
+/* Contenido del medio*/
+
+/*menu de enfermedades*/
+#menu_enf{
+
+  width: 80%;
+
+}
+#menu_enf table{
+  margin-left: 30%;
+  text-align: center;
+}
+#espacio{
+  padding: 1%;
+}
+
+
+#menu_enf td  {
+  vertical-align:middle;
+  height: 100px;
+  width: 250px;
+  border: 3px solid black;
+}
+#menu_enf td:hover{
+   
+    background-color: red;
+    height: 60px;
+}
+
+
+#menu_enf a {
+  font-size: 160%;
+  color :black;
+  font-weight:bold;
+  text-decoration: none;
+}
+#menu_enf a:hover{
+
+  color: white;
+
 }
