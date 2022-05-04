@@ -27,7 +27,7 @@ Validador web
 Reset CSS para que funcione con todos los navegadores
 - https://meyerweb.com/eric/tools/css/reset/
 
-<h3> Paguinas </h3>
+<h3> Paginas </h3>
 HATARAKU SAIBU! Cells at work
 
 - https://myanimelist.net/anime/37141/Hataraku_Saibou_TV/

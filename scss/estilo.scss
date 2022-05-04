@@ -1,8 +1,12 @@
 /*GENERAL STYLE*/
+
+$font-stack: Georgia, 'Times New Roman', Times, serif;
+$primary-color: black;
+
 h1{
     font-weight:bold;
     text-decoration:none;
-    color:green;
+    color: $primary-color;
     font-size:30px;
     margin:auto;
 }
@@ -13,15 +17,15 @@ body h1{
   text-align:center;
   font-size:50px;
   font-family:'Olive Village';
-  color:black;
+  color: $primary-color;
   font-weight:bold;
 }
 
 h2{
   font-weight:bold;
   text-decoration:none;
-  color:blueviolet;
-  font-size:28px;
+  color: $primary-color;
+  font-size: 28px;
   margin-bottom:10px;
 }
 
@@ -42,21 +46,22 @@ p{
 footer{
   max-width:960px;
   text-decoration:none;
-  color:black;
   font-size:12px;
   position:relative;
   margin:100px auto auto auto;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 100% $font-stack;
+  color: $primary-color;
 }
 
 #footindex{
   max-width:960px;
   text-decoration:none;
-  color:black;
+  
   font-size:12px;
   position:relative;
   margin:1200px auto auto auto;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 100% $font-stack;
+  color: $primary-color;
 }
 
 
@@ -163,51 +168,50 @@ ul li p{
 }
 
 #faq{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  max-width:960px;
-  margin:auto;
-}
+    font: 100% $font-stack;
+    color: $primary-color;
+    max-width:960px;
+    margin:auto;
+    ul{
+        li{
+            font-size:24px;
+            font-weight:bold;
+            margin-bottom: 30px;
+        }
 
-#faq ul li{
-  color:black;
-  font-size:24px;
-  margin-bottom:30px;
-  font-weight:bold;
-}
-
-#faq ul p{
-  color:black;
-  font-size:18px;
-  margin-bottom:30px;
+        p{
+            font-size:18px;
+            margin-bottom: 30px;
+        }
+    }
+  
 }
 
 #about{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font: 100% $font-stack;
+  color: $primary-color;
   max-width:960px;
   margin:auto;
+  header h2{
+    font-size:34px;
+    margin-bottom: 30px;
+    font-weight:bolder;
+  }
+  ul{
+      
+    li{
+        font-size:24px;
+        margin-top:50px;
+        font-weight:bold;
+        margin-bottom: 30px;
+      }
+    p{
+        font-size:18px;
+        margin-bottom: 30px;
+    }
+  }
 }
 
-#about header h2{
-  margin-top:30px;
-  color:black;
-  font-size:34px;
-  margin-bottom:80px;
-  font-weight:bolder;
-}
-
-#about ul li{
-  color:black;
-  font-size:24px;
-  margin-bottom:30px;
-  margin-top:50px;
-  font-weight:bold;
-}
-
-#about ul p{
-  color:black;
-  font-size:18px;
-  margin-bottom:30px;
-}
 
 /*ejercicios.html*/
 #ejercicios{
