@@ -10,99 +10,176 @@
     <link rel="stylesheet" href ="../../css/estilos.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
+    <script src=                
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+      </script>
 </head>
 <body>
-
-    <nav id="navegador">
-        <ul >
-            <li><a href="../../index.html">Inicio</a></li>
-            <li><a href="../../Enfermedades.html">Enfermedades</a></li>
-            <li><a href="../../ejercicios.html">Ejercicios</a></li>
-            <li><a href="../../alimentacion.html">Alimentacion</a></li>
-            <li><a href="../../faq.html">FAQ</a></li>
-            <li><a href="../../about.html">About</a></li>
-            
-        </ul>
-    </nav>
-    
-    <section  id="sidebarL">
-        <section class="d-flex justify-content-center">
-            <div class="card col-md-8 p-3">
-                <div class="mb-3">
-                        <h3>Comentarios</h3>
-                </div>
-                <div class="mb-2" >
-                     <form class="row mb-8 g-3 " action="" id="comentarios"> 
-                            <div class="mb-2" > 
-                                    <label for="nombre">Nombre</label>
-                                    <input type="text" id="nombre" class="form-control" name="nombre" placeholder=" ej. Fernando fuente alba" required>
-                            </div>
-                            <div class="mb-2" > 
-                                <label for="comentario">Comentario</label>
-                                <textarea class ="form-control" name="mensaje" id="mensaje" placeholder="Ingrese su comentario"></textarea>
-                            </div>
-                            <div class="mb-2 row g-1" > 
-                                   <button type="submit" class="btn btn-primary">Enviar</button> 
-                            </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-        
-            <div class="list-group " id="comentar">
-                <h4>Caja de comentarios</h4>
-                <a class="list-group-item list-group-item-action active" aria-current="true">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Jorge</h5>
-                  </div>
-                  <p class="mb-1">Un comentario muy largo aca</p>
-                </a>
-          
-            </div>
-
-
-    </section>
-
-    <section id="medio" >
-
-             <h2>Cáncer de Mama y Útero</h2>
-
-             <ul>
-                <li>Son los tipos de Cáncer más frecuentes en las mujeres</li>
-                <li>La mayoría de los casos de Cáncer Cervicouterino son desarrollados a causa del Virus del Papiloma Humano (VPH)</li> 
-                <li>Datos del Ministerio de Salud (MINSAL) mencionaron que el Cáncer Cervicouterino es la segunda causa de muerte entre los 20-44 años</li>
-             </ul>
-
-            <center>
-                <img  src="../../img/enfermedades/C_utero.jpg" height="100%" width="95%"><br />
-                <img  src="../../img/enfermedades/C_mamario.jpg"  height="67%" width="95%" > 
-            </center>
-
-            
-
-    </section >
-
-    <section id="sidebarR">
-
-        <div >
-            <ul >
-                   
-                <li><a>Cancer de mama y ovarios</a></li>  
-                <li><a href="colon.html">Colon irritable</a></li>  
-                <li><a href="p_cardiacos.html">Problemas cardiacos</a></li>
-                <li><a href="depresion.html">Depresión</a></li>
-                <li><a href="dolor_cabeza.html">Dolor de cabeza</a></li>
-                <li><a href="tiroide.html">Problemas de tiroide</a></li>
-                <li><a href="quistes_ova.html">Quistes ovaricos</a></li>
-               
-
+<div class="container-fluid "> 
+    <div class="row " id="navegador">
+        <div class="col-4"></div>
+        <div class="col ">
+            <ul class="list-group list-group-horizontal ">
+                <li class="list-group-item bg-info " ><a class="fs-4" href="../../index.html">Inicio</a></li>
+                <li class="list-group-item bg-info " ><a class="fs-4" href="../../Enfermedades.html">Enfermedades</a></li>
+                <li class="list-group-item bg-info " ><a class="fs-4" href="../../ejercicios.html">Ejercicios</a></li>
+                <li class="list-group-item bg-info " ><a class="fs-4" href="../../alimentacion.html">Alimentacion</a></li>
+                <li class="list-group-item bg-info " ><a class="fs-4" href="../../faq.html">FAQ</a></li>
+                <li class="list-group-item bg-info " ><a class="fs-4" href="../../about.html">About</a></li>
             </ul>
         </div>
+       
+    </div>
 
-    </section>
+        <div id="cuerpo" class="row ">
+            <div class="row ms-1">
+                <div class="col-3 " id="sidebarL">
+                    
+                        <div class="row d-flex justify-content-center">
+                            
+                                <div class="card col-md-12 ">
+                                    <div class="card-header">
+                                            <h3 class="alling-text-center fs-1 py-4 fw-bolder text-center text-dark">Comentarios</h3>
+                                    </div>
+                                    <div class="mb-2 card-body" >
+                                        <form class="row mb-8 g-3 " action="" id="comentarios"> 
+                                                <div class="mb-2" > 
+                                                        <label for="usuario">Nombre</label>
+                                                        <input type="text" id="usuario" class="form-control" name="usuario" placeholder=" ej. pedro123" maxlength="10" required>
+                                                </div>
+                                                <div class="mb-2" > 
+                                                    <label for="comentario">Comentario</label>
+                                                    <textarea class ="form-control" name="mensaje" id="mensaje" placeholder="Ingrese su comentario"></textarea>
+                                                </div>
+                                                <div class="mb-2 row g-2" > 
+                                                    <button type="submit" class="btn btn-primary btn-lg bg-success">Enviar</button> 
+                                                    
+                                                </div>
+                                        </form>
+                                    </div>
+                                </div>
+                        
+                        </div>
 
-    <footer>Autores: Mauricio Díaz Espinoza, Nicolas Bobadilla Sanchez, Matias Mujica Alevropulos</footer>
-    <script src='../../js/app.js'></script>
+                        <div class="row d-flex "> 
+                            <div class="card">
+                                <div class="row ">
+                                    <div class="card-header" >
+                                        <h1 class="aling-text-center fs-2 fw-bolder card-header">Caja de comentarios</h1>
+                                    </div>
+                                </div>
+                                    <div class="card-body" id="comentar">
+                                            <a id="a0" class="list-group-item list-group-item-action active" aria-current="true">
+
+                                                <div class="row d-flex w-100 justify-content-md-between">
+                                                        <div class="col-6 ">
+                                                            <h5 class="mb-1 fs-4">Jorge12</h5>
+                                                        </div>
+                                                        <div class="col-1" >
+                                                            <button class="btn btn-danger me-md-2 " type="button" id="b_cerrar"  value="a0" disabled>X</button>
+                                                        </div>
+
+                                                    </div>
+                                                <p class="text-break" >Un comentario con sentido </p>
+                                            </a>
+
+                                    </div>
+                                
+                            </div>
+                            <div class="bg-dark p-0 g-0">---------------------------------------</div>
+                        </div>
+                        
+
+                        <div class="row ">
+                            <div class=" card ">
+                                <div class="card-body">
+                                    <form class=" mb-8  group-horizontal" action="" id="usuarios_com"> 
+                                        <div class="row ">
+                                            
+                                            <div class="col 6" > 
+                                                    <label for="user">Usuario</label>
+                                                    <input type="text" id="user" class="form-control" name="user" placeholder=" ej. usuario123" maxlength="12" >
+                                                <label for="pass">Clave</label>
+                                                <input type="password" id="pass" class="form-control" name="pass" >
+                                            </div>
+                                            <div class="col-6  btn-group-vertical" > 
+                                                <button class="btn btn-secondary  bg-black "  id="des_boton">Comprobar</button> 
+                                                <button id="eliminar_c" class="btn btn-danger " disabled>Eliminar comentarios</button> 
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    
+                </div>
+
+                <div class="col-lg-7 ">
+                        <div class="row">
+                                <div id="medio" class="card" >
+                                    
+                                    <div class="card-header">
+                                        <h1 class="text-dark ">Cáncer de Mama y Útero</h1>
+                                    </div>
+
+                                    <div class="card=body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Son los tipos de Cáncer más frecuentes en las mujeres</li>
+                                            <li class="list-group-item">La mayoría de los casos de Cáncer Cervicouterino son desarrollados a causa del Virus del Papiloma Humano (VPH)</li> 
+                                            <li class="list-group-item">Datos del Ministerio de Salud (MINSAL) mencionaron que el Cáncer Cervicouterino es la segunda causa de muerte entre los 20-44 años</li>
+                                        </ul>
+
+                                        <ul class="list-group">
+                                            <li class="list-group-item"> <img  src="../../img/enfermedades/C_utero.jpg" height="100%" width="100%"></li>
+                                            <li class="list-group-item"> <img  src="../../img/enfermedades/C_mamario.jpg"  height="100%" width="100%" > </li>
+                                        </ul>
+                                    
+                                    </div>  
+
+                            
+                                </div>
+                        </div>
+                </div>
+
+                <div class="col-2 ">
+                    <div class="row">
+                            <div class="card">
+                                <div class="card-header aling-text-center"><h1 class="text-dark fs-3">Menu de enfermedades</h1></div>
+                                    <div id="sidebarR" class="card-body">
+                                                <div class="row d-inline-flex p-2 bd-highlight">
+                                                    <ul class="list-group list-group-vertical p-0">
+                                                        <li class="list-group-item list-group-item-info"><a>Cancer de mama y ovarios</a></li>  
+                                                        <li id="hov_li" class="list-group-item"><a href="colon.html">Colon irritable</a></li>  
+                                                        <li id="hov_li" class="list-group-item"><a href="p_cardiacos.html">Problemas cardiacos</a></li>
+                                                        <li id="hov_li" class="list-group-item"><a href="depresion.html">Depresión</a></li>
+                                                        <li id="hov_li" class="list-group-item"><a href="dolor_cabeza.html">Dolor de cabeza</a></li>
+                                                        <li id="hov_li" class="list-group-item"><a href="tiroide.html">Problemas de tiroide</a></li>
+                                                        <li id="hov_li"class="list-group-item"><a href="quistes_ova.html">Quistes ovaricos</a></li>
+                                                    
+
+                                                    </ul>
+                                                </div>  
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <script src='../../js/app.js'></script>
+    </div>
+
+    <div class="row g-0 p-0">
+        <div class="col-5"></div>
+        <div class="col"><footer>Autores: Mauricio Díaz Espinoza, Nicolas Bobadilla Sanchez, Matias Mujica Alevropulos</footer></div>
+        
+    </div>
+    
 </body>
+    
+        
+   
 </html>

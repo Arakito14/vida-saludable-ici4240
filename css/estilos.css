@@ -45,7 +45,6 @@ footer{
   color:black;
   font-size:12px;
   position:relative;
-  margin:100px auto auto auto;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -223,56 +222,23 @@ ul li p{
 
 /*Enfermedades*/
 
-
-
-#sidebarL{
-  float:left ;
-  width: 400px;
-  border: solid white 10px;
-  height: 1000px;
-}
-
-
 /* sidebar derecho*/
-#sidebarR{
- padding-top: 10%;
- float:right ;
- /*background-color: black; */
- width: 400px;
- border: solid white 10px;
- height: 1000px;
-}
-#sidebarR div{
- padding-left: 5%;
- position: fixed;
-}
-#sidebarR ul{
- 
- border:solid black 2px ;
- width: 250px;
- max-height: fit-content;
-}
+
+
 
 #sidebarR ul li {
- 
  text-align:center;
- margin :5px; 
- padding-bottom:2%;
- border: solid 3px;
 }
 
 #sidebarR a{
  color:black;
- margin: 10px;
  text-decoration: none;
- font-size: 20px;
 }
-#sidebarR li:hover{
-
- background-color: red;
+#sidebarR #hov_li:hover{
+ background-color: green;
 }
 
-#sidebarR a:hover
+#sidebarR #hov_li a:hover
 {
  color:white;
 }
@@ -321,27 +287,15 @@ ul li p{
 
 #medio {
   padding-top: 1%;
-  display: inline-block;
-  width: 1055px;
+
 }
 
 #medio ul {
   font-size: 25px;
-  list-style-type:square;
-  padding-left: 5%;
-  padding-bottom: 2%;
-
 }
 #medio h2{
   text-align: center ; 
   font-size: 220%;
-  padding-bottom: 15px;
-
-}
-
-#medio img{
-  border: 15px solid;
-   color: orange;
 }
 
 
