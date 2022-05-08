@@ -1,60 +1,27 @@
-<!--COMENTARIOS-->
-# Vida Saludable
-(ICI4240)
+# VidaSaludable
 
-<h3> Integrantes </h3>
-- Nicolas Bobadilla Sanchez
-- Matias Vizancio Mujica Alevropulos
-- Mauricio Diaz
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
 
-<h3> Drive compartido del proyecto </h3>
+## Development server
 
-- https://drive.google.com/drive/folders/1e94xEY_ULXDHBaQU6R9Gdvj5JX339EAC?usp=sharing
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-<h3> Objetivo </h3>
-- Dar accebilidad a informacion que puede ser util a personas que padescan alguna de las enfermedades mas comunes en nuestro pais , y tratar de mejorarles un poco su diad dia.
+## Code scaffolding
 
-<h3> Instalar </h3>
-- IDE a eleccion.
-- Git.
-- Para VSCODE: HTMLL BoilerPlate, HTML Snippets
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-<h3> Recursos </h3>
-Validador web
+## Build
 
-- https://validator.w3.org/
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-Reset CSS para que funcione con todos los navegadores
-- https://meyerweb.com/eric/tools/css/reset/
+## Running unit tests
 
-<h3> Paginas </h3>
-HATARAKU SAIBU! Cells at work
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-- https://myanimelist.net/anime/37141/Hataraku_Saibou_TV/
+## Running end-to-end tests
 
-Youtubers
-- https://www.youtube.com/c/ATHLEANXEspa%C3%B1ol
-- https://www.youtube.com/c/VadymCavaleraCalisthenics
-- https://www.youtube.com/c/BullyJuice
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-Rutinas Principianets
-- https://www.youtube.com/watch?v=_q_-adYzkh0
-- https://www.youtube.com/watch?v=-lO1pgoES74
-- https://www.youtube.com/watch?v=BQAtwmaXbzM
-- https://www.youtube.com/watch?v=6auB47_9Kq4
-- https://www.youtube.com/watch?v=uKEPTDLgSWs
+## Further help
 
-Rutinas mas intensas
-- https://www.youtube.com/watch?v=hTKOciDDbyU
-- https://www.youtube.com/watch?v=0EdErFGAFK4
-- https://www.youtube.com/watch?v=rCx4p0VpK80
-- https://www.youtube.com/watch?v=HD8TWGR4DN0
-- 
-
-App
-- https://play.google.com/store/apps/details?id=homeworkout.homeworkouts.noequipment&hl=es_CL&gl=US
-
-Alimentación
-- https://www.freepik.es/search?format=search&query=fitness
-- https://www.healthdirect.gov.au/creating-healthy-habits
-- https://www.healthyhabitsstl.com/pagedale-page-ave-location
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
