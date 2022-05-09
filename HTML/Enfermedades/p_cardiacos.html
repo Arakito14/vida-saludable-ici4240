@@ -3,65 +3,148 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>SEC</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <link rel="stylesheet"  href="../../css/reset.css" type="text/css"/>
-    <link rel="stylesheet" href ="../../css/estilos.css" >
+    <link rel="stylesheet" href ="../../css/style.css">
 
     <script src='main.js'></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-
-    <nav id="navegador">
-        <ul >
-            <li><a href="../../index.html">Inicio</a></li>
-            <li><a href="../../Enfermedades.html">Enfermedades</a></li>
-            <li><a href="../../ejercicios.html">Ejercicios</a></li>
-            <li><a href="../../alimentacion.html">Alimentacion</a></li>
-            <li><a href="../../faq.html">FAQ</a></li>
-            <li><a href="../../about.html">About</a></li>
-            
-        </ul>
-    </nav>
-
-    <section  id="sidebarL">
-
-    </section>
-
-    <section id="medio" >
-
-             <h2>Problemas Cardíacos</h2>
-
-             <ul>
-                <li>El Infarto es la primera causa de muerte en la población femenina de Chile</li>
-                <li>Las principales causas de las Enfermedades Cardiovasculares son el consumo de tabaco, sedentarismo y la mala alimentación</li> 
-             </ul>
-
-            <center>
-                    <img src="../../img/enfermedades/Corazon.jpg" height="100%" width="90%" ><br />
-            </center>
-
-    </section >
-
-    <section id="sidebarR">
-
-        <div>
-            <ul >
-                    
-                <li><a href="cancer_mu.html">Cancer de mama y ovarios</a></li>
-                <li><a href="colon.html">Colon irritable</a></li>
-                <li><a >Problemas cardiacos</a></li>
-                <li><a href="depresion.html">Depresión</a></li>
-                <li><a href="dolor_cabeza.html">Dolor de cabeza</a></li>
-                <li><a href="tiroide.html">Problemas de tiroide</a></li>
-                <li><a href="quistes_ova.html">Quistes ovaricos</a></li> 
-
-            </ul>
-
+     <div class="container-fluid "> 
+        <div class="row-2">
+            <div class="col lista_nav_ef">
+                <ul class="list-group  list-group-horizontal ">
+                    <li class="list-group-item " ><a class="fs-4" href="../../index.html">Inicio</a></li>
+                    <li class="list-group-item " ><a class="fs-4" href="../../Enfermedades.html">Enfermedades</a></li>
+                    <li class="list-group-item " ><a class="fs-4" href="../../ejercicios.html">Ejercicios</a></li>
+                    <li class="list-group-item " ><a class="fs-4" href="../../alimentacion.html">Alimentacion</a></li>
+                    <li class="list-group-item " ><a class="fs-4" href="../../faq.html">Preguntas frecuentes</a></li>
+                    <li class="list-group-item " ><a class="fs-4" href="../../about.html">Sobre nosotros</a></li>
+                </ul>
+            </div>
+          </div>
         </div>
-    </section>
-
-        <footer>Autores: Mauricio Díaz Espinoza, Nicolas Bobadilla Sanchez, Matias Mujica Alevropulos</footer>
+            <div id="cuerpo" class="row m-1">
+                <div class="row p-0">
+                    <div class="col-3 " id="sidebarL">
+                        
+                            <div class="row d-flex justify-content-center">
+                                
+                                    <div class="card " id="ing_comen">
+                                        <div class="card-header">
+                                                <h3 class="alling-text-center fs-1 py-4 fw-bolder text-center text-dark">Comentarios</h3>
+                                        </div>
+                                        <div class=" card-body" >
+                                                <div class=" row" > 
+                                                    <label for="usuario">Nombre</label>
+                                                    <input type="text" id="usuario" class="form-control" name="usuario" placeholder=" ej. pedro123" maxlength="10" required>
+                                                    <label for="pass">Clave</label>
+                                                    <input type="password" id="pass" class="form-control" name="pass" >
+                                            </div>
+                                            <div class=" row" > 
+                                                <label for="comentario">Comentario</label>
+                                                <textarea class ="form-control" name="mensaje" id="mensaje" placeholder="Ingrese su comentario"></textarea>
+                                            </div>
+                                            <div class="row" id="btn_group1">
+                                                
+                                                    <div class="btn btn-group " > 
+                                                        <button id="b_enviar" class="btn btn-primary bg-success btn-lg ">Enviar</button> 
+                                                        <button id="b_com" class="btn  btn-secondary  bg-black "  >Comprobar</button> 
+                                                        <button id="b_elim" class="btn btn-danger  btn-small invisible" invisibled>Eliminar comentarios</button> 
+                                                </div>  
+                                            </div>              
+                                        </div>
+                                    </div>
+                            
+                            </div>
+    
+                            <div class="row d-flex "> 
+                                <div class="card">
+                                    <div class="row ">
+                                        <div class="card-header" >
+                                            <h1 class="aling-text-center fs-2 fw-bolder card-header">Caja de comentarios</h1>
+                                        </div>
+                                    </div>
+                                        <div class="card-body" id="comentar">
+                                            <template id="comen_1">
+                                                <a  class="list-group-item list-group-item-action " aria-current="true">
+    
+                                                    <div class="row d-flex w-100 justify-content-md-between">
+                                                            <div class="col-6 ">
+                                                                <h5 class="mb-1 fs-4"></h5>
+                                                            </div>
+                                                            <div class="col-1" >
+                                                                <button class="btn btn-danger me-md-2 " type="button" id="b_cerrar"  value="a0" disabled>X</button>
+                                                            </div>
+    
+                                                        </div>
+                                                    <p class="text-break" id="p_c"></p>
+                                                </a>
+                                            </template>
+                                        </div>
+                                    
+                                </div>
+                                <div class="bg-dark p-0 g-0">---------------------------------------</div>
+                            </div>
+                            
+                    </div>
+    
+                    <div class="col-lg-7 ">
+                            <div class="row">
+                                    <div id="medio" class="card" >
+                                        
+                                        
+                                            <h1 class="card-header text-center">Problemas Cardíacos</h1>
+                                        
+                                        <div class="card=body">
+                                            <ul class="list-group">
+                                               <li class="list-group-item">El Infarto es la primera causa de muerte en la población femenina de Chile</li>
+                                               <li class="list-group-item">Las principales causas de las Enfermedades Cardiovasculares son el consumo de tabaco, sedentarismo y la mala alimentación</li> 
+                                            </ul>
+    
+                                            <ul class="list-group">
+                                                <li class="list-group-item"> <img src="../../img/enfermedades/Corazon.jpg" height="100%" width="100%" ></li>
+                                            </ul>
+                                        </div>  
+                                    </div>
+                            </div>
+                    </div>
+    
+                    <div class="col-2 row_men_enf">
+                        <div class="card ">
+                            <h3 class="card-header ">Menu de enfermedades</h3>
+                                <div class="card-body lista_enf">
+                                    <ul class="list-group list-group-vertical">
+                                                            <li id="hov_li" class="list-group-item"><a href="cancer_mu.html">Cancer de mama y ovarios</a></li>
+                                                            <li id="hov_li" class="list-group-item"><a href="colon.html">Colon irritable</a></li>
+                                                            <li><a class="list-group-item list-group-item-info">Problemas cardiacos</a></li>
+                                                            <li id="hov_li" class="list-group-item"><a href="depresion.html">Depresión</a></li>
+                                                            <li id="hov_li" class="list-group-item"><a href="dolor_cabeza.html">Dolor de cabeza</a></li>
+                                                            <li id="hov_li" class="list-group-item"><a href="tiroide.html">Problemas de tiroide</a></li>
+                                                            <li id="hov_li" class="list-group-item"><a href="quistes_ova.html">Quistes ovaricos</a></li> 
+                                                        </ul>
+                                                    </div>  
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            
+    
+            
+        </div>
+    
+        <div class="row g-0 p-0">
+            <div class="col-5"></div>
+            <div class="col"><footer>Autores: Mauricio Díaz Espinoza, Nicolas Bobadilla Sanchez, Matias Mujica Alevropulos</footer></div> 
+        </div>
+        <script src='../../js/app_enfer.js'></script>
 </body>
 </html>
