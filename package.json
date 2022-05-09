@@ -1,0 +1,21 @@
+{
+  "name": "vida-saludable-ici4240-1",
+  "version": "1.0.0",
+  "description": "<!--COMENTARIOS-->\r # Vida Saludable\r (ICI4240)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arakito14/vida-saludable-ici4240.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arakito14/vida-saludable-ici4240/issues"
+  },
+  "homepage": "https://github.com/Arakito14/vida-saludable-ici4240#readme"
+}
+

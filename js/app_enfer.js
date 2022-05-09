@@ -1,26 +1,3 @@
-/* const form=document.getElementById('f_cont');
-
-form.addEventListener('submit',function(e){
-    e.preventDefault();
-
-    var nombr= document.getElementById('nombre').value;
-    var mail= document.getElementById('correo').value;
-    var temai= document.getElementById('tema').value;
-    var edadd= document.getElementById('edad').value;
-    var comen= document.getElementById('mensaje').value;
-    var sexo;
-    if(document.getElementById('Hombre').checked) {
-        sexo= document.getElementById('Hombre').value;
-   
-      }
-    else if(document.getElementById('Mujer').checked){
-        sexo= document.getElementById('Mujer').value;
-       
-      }
-    
-      form.reset();
-})
-*/
 
 const comentarios=document.getElementById('comentar');
 const botones=document.getElementById('btn_group1');
@@ -97,22 +74,35 @@ botones.addEventListener('click',event =>{
                    
         if((name=='admin')&(clave=='admin')){
             botones.querySelector('#b_elim').classList.remove('invisible');
+            Swal.fire({
+                icon: 'success',
+                title: 'Boton eliminar desbloqueado'
+              });
             
         }
         else if((name=='admin')&(clave=='admin1'))
         {
             botones.querySelector('#b_elim').classList.add('invisible');
-
+            Swal.fire({
+                icon: 'success',
+                title: 'Boton eliminar ocultado'
+              });
             var botones_int=document.querySelectorAll("#b_cerrar",".boton");
             var z=0;
-            console.log(botones_int);
+            botones_disable = true;
             botones_int.forEach(function(){
                 botones_int[z].disabled=true;
                 z++;
                
             });
         }
-
+        else{
+            Swal.fire({
+                icon: 'error',
+                title: 'Datos de comprobacion erroneos',
+                footer: 'El usuario o la clave a sido incorrecta'
+              });
+        }
      }
 })
 

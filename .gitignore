@@ -45,3 +45,4 @@ Thumbs.db
 # PROYECT generated files #
 ######################
 *template
+node_modules/

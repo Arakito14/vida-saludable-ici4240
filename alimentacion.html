@@ -4,43 +4,60 @@
 <html lang="es">
     <head>
         <meta charset="utf-8"/>
-        <title> HELLO WORLD </title>
+        <title>SEC</title>
         <link rel="stylesheet"  href="css/reset.css" type="text/css"/>
-        <link rel="stylesheet" href = css/estilos.css type="text/css"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     </head>
 
     <body>
-        <header><h1>Alimentación</h1></header>
-        <nav>
-            <ul id="navegador">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="Enfermedades.html">Enfermedades</a></li>
-                <li><a href="ejercicios.html">Ejercicios</a></li>
-                <li><a href="alimentacion.html">Alimentacion</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="index.html#gallery">Galeria</a></li>
-            </ul>
-        </nav>
+            <div class="container-fluid">
+                <div class="row-1">
+                        <header>
+                            <h1 class="text-center">Alimentacion</h1>
+                        </header>
+                </div>
+                    <div class="row-2" id="nav_p">
+                    <div class="col lista_nav">
+                        <ul class="list-group  list-group-horizontal ">
+                            <li class="list-group-item " ><a class="fs-4" href="../../index.html">Inicio</a></li>
+                            <li class="list-group-item " ><a class="fs-4" href="../../Enfermedades.html">Enfermedades</a></li>
+                            <li class="list-group-item " ><a class="fs-4" href="../../ejercicios.html">Ejercicios</a></li>
+                            <li class="list-group-item " ><a class="fs-4" href="../../alimentacion.html">Alimentacion</a></li>
+                            <li class="list-group-item " ><a class="fs-4" href="../../faq.html">Preguntas frecuentes</a></li>
+                            <li class="list-group-item " ><a class="fs-4" href="../../about.html">Sobre nosotros</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                 <div class="row" >
+                     <div class="col row_ali">
+                            <div class="card">
+                                <div class="card-header"><h2>Como alimentarse adecuadamente</h2></div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <p>
+                                        Generaciones de chilenos están acostumbrados al diseño de la pirámide alimentaria, y no va a desaparecer. De hecho, la Pirámide de la Alimentación Saludable y el Plato de la Alimentación Saludable (así como el Plato de la Alimentación Saludable para Niños) se complementan entre sí.
+                                        </p>
+                                        <p>
+                                        Los consumidores pueden considerar la pirámide de la alimentación sana como una lista de la compra:
+                                        </p>
+                                    </p>
+                                    <ul class="list-group">
+                                        <li class="list-items"><p>Las verduras, las frutas, los cereales integrales, los aceites saludables y las proteínas sanas, como los frutos secos, las judías, el pescado y el pollo, deberían entrar en la cesta de la compra cada semana, junto con un poco de yogur u otros productos lácteos si se desea.</p></li>
+                                        <li class="list-items"><p>La Pirámide de la Alimentación Saludable también aborda otros aspectos de un estilo de vida saludable -ejercicio, control de peso, vitamina D y suplementos multivitamínicos, y moderación en el consumo de alcohol para las personas que beben- por lo que es una herramienta útil para los profesionales de la salud y los educadores sanitarios.</p></li>
+                                        <li class="list-items"><p>Un plato y la pirámide de la alimentación saludable resumen la mejor información dietética disponible en la actualidad. Sin embargo, no son inamovibles, ya que los investigadores en nutrición sin duda aportarán nueva información en los próximos años. La Pirámide de la Alimentación Saludable y el Plato de la Alimentación Saludable cambiarán para reflejar nuevos datos importantes.</p></li>
+                                    </ul> 
 
-    <section id="dieta">
-        <h2>Como alimentarse adecuadamente</h2>
-            <p>
-            Generaciones de chilenos están acostumbrados al diseño de la pirámide alimentaria, y no va a desaparecer. De hecho, la Pirámide de la Alimentación Saludable y el Plato de la Alimentación Saludable (así como el Plato de la Alimentación Saludable para Niños) se complementan entre sí.
-            </p>
-            <p>
-            Los consumidores pueden considerar la pirámide de la alimentación sana como una lista de la compra:
-            </p>
-            <ul>
-                <li>Las verduras, las frutas, los cereales integrales, los aceites saludables y las proteínas sanas, como los frutos secos, las judías, el pescado y el pollo, deberían entrar en la cesta de la compra cada semana, junto con un poco de yogur u otros productos lácteos si se desea.</li>
-                <li>La Pirámide de la Alimentación Saludable también aborda otros aspectos de un estilo de vida saludable -ejercicio, control de peso, vitamina D y suplementos multivitamínicos, y moderación en el consumo de alcohol para las personas que beben- por lo que es una herramienta útil para los profesionales de la salud y los educadores sanitarios.</li>
-                <li>El plato y la pirámide de la alimentación saludable resumen la mejor información dietética disponible en la actualidad. Sin embargo, no son inamovibles, ya que los investigadores en nutrición sin duda aportarán nueva información en los próximos años. La Pirámide de la Alimentación Saludable y el Plato de la Alimentación Saludable cambiarán para reflejar nuevos datos importantes.</li>
-            </ul>           
-            <img src=IMG/alimentacion/piramide-alimentos.jpg title="piramide alimentos">
-
-    </section>
-
-    <footer>Autores: Mauricio Díaz Espinoza, Nicolas Bobadilla Sanchez, Matias Mujica Alevropulos</footer>
+                                    <img src=IMG/alimentacion/piramide-alimentos.jpg class="d-block img-fluid mx-auto" width="100%" title="piramide alimentos">
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            
+    
+            <div class="row g-0 p-0"><footer class="text-center">Autores: Mauricio Díaz Espinoza, Nicolas Bobadilla Sanchez, Matias Mujica Alevropulos</footer></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     </body>
 
