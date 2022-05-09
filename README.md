@@ -14,12 +14,15 @@
 <h3> Identificación de las funcionalidades (CRUD) </h3>
 - Se agrego un CRUD como caja de comentarios, las funcionalidades que tiene es la de agregar comentario y eliminarlo , consta de 3 botones uno de enviado que crea un comentario , otro de comprobar (Cuando el usuario y la pass son “admin” desbloquea el botón eliminar comentario, para ocultarlo denuevo se tiene que poner el usuario “admin” y la clave “admin1”), el tercer boton de color rojo esta invisible , para volverlo visible se presiona el comprobar con los datos dichos anteriormente, al presionar el boton eliminar  una vez habilita los botones X de los comentarios , al presionarse denuevo los deshabilita.
 
-<h3> Drive compartido del proyecto </h3>
-
-- https://drive.google.com/drive/folders/1e94xEY_ULXDHBaQU6R9Gdvj5JX339EAC?usp=sharing
+<h3> Notas </h3>
+- En la rama https://github.com/Arakito14/vida-saludable-ici4240/tree/MAU se esta trabajando en la versión con Angular.
 
 <h3> Objetivo </h3>
 - Dar accebilidad a informacion que puede ser util a personas que padescan alguna de las enfermedades mas comunes en nuestro pais , y tratar de mejorarles un poco su diad dia.
+
+<h3> Drive compartido del proyecto </h3>
+
+- https://drive.google.com/drive/folders/1e94xEY_ULXDHBaQU6R9Gdvj5JX339EAC?usp=sharing
 
 <h3> Instalar </h3>
 - IDE a eleccion.
