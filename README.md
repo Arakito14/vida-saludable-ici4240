@@ -7,6 +7,10 @@
 - Matias Vizancio Mujica Alevropulos
 - Mauricio Diaz
 
+<h3> Figma - Diseño de las interfaces de usuario (UI) </h3>
+
+- https://www.figma.com/file/aLS3ad66Xis6HHFcfVmwue/ici420_vida-saludable?node-id=0%3A1
+
 <h3> Drive compartido del proyecto </h3>
 
 - https://drive.google.com/drive/folders/1e94xEY_ULXDHBaQU6R9Gdvj5JX339EAC?usp=sharing
@@ -28,10 +32,6 @@ Reset CSS para que funcione con todos los navegadores
 - https://meyerweb.com/eric/tools/css/reset/
 
 <h3> Paguinas </h3>
-HATARAKU SAIBU! Cells at work
-
-- https://myanimelist.net/anime/37141/Hataraku_Saibou_TV/
-
 Youtubers
 - https://www.youtube.com/c/ATHLEANXEspa%C3%B1ol
 - https://www.youtube.com/c/VadymCavaleraCalisthenics
@@ -49,7 +49,6 @@ Rutinas mas intensas
 - https://www.youtube.com/watch?v=0EdErFGAFK4
 - https://www.youtube.com/watch?v=rCx4p0VpK80
 - https://www.youtube.com/watch?v=HD8TWGR4DN0
-- 
 
 App
 - https://play.google.com/store/apps/details?id=homeworkout.homeworkouts.noequipment&hl=es_CL&gl=US
