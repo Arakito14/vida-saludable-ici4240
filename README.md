@@ -26,6 +26,7 @@
 <h3> Recursos </h3>
 Validador web
 
+
 - https://validator.w3.org/
 
 Reset CSS para que funcione con todos los navegadores
