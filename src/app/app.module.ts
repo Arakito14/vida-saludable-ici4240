@@ -12,6 +12,14 @@ import { FaqScreenComponent } from './screens/faq-screen/faq-screen.component';
 import { EjerciciosScreenComponent } from './screens/ejercicios-screen/ejercicios-screen.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { SobreNosotrosScreenComponent } from './screens/sobre-nosotros-screen/sobre-nosotros-screen.component';
+import { CancerComponent } from './screens/enfermedades/cancer/cancer.component';
+import { ColonComponent } from './screens/enfermedades/colon/colon.component';
+import { CardiacosComponent } from './screens/enfermedades/cardiacos/cardiacos.component';
+import { DepresionComponent } from './screens/enfermedades/depresion/depresion.component';
+import { CabezaComponent } from './screens/enfermedades/cabeza/cabeza.component';
+import { TiroideComponent } from './screens/enfermedades/tiroide/tiroide.component';
+import { OvaricosComponent } from './screens/enfermedades/ovaricos/ovaricos.component';
+import { AlimentacionScreenComponent } from './screens/alimentacion-screen/alimentacion-screen.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +30,14 @@ import { SobreNosotrosScreenComponent } from './screens/sobre-nosotros-screen/so
     FaqScreenComponent,
     EjerciciosScreenComponent,
     SobreNosotrosScreenComponent,
+    CancerComponent,
+    ColonComponent,
+    CardiacosComponent,
+    DepresionComponent,
+    CabezaComponent,
+    TiroideComponent,
+    OvaricosComponent,
+    AlimentacionScreenComponent,
   ],
   imports: [
     BrowserModule,
