@@ -20,6 +20,9 @@ import { CabezaComponent } from './screens/enfermedades/cabeza/cabeza.component'
 import { TiroideComponent } from './screens/enfermedades/tiroide/tiroide.component';
 import { OvaricosComponent } from './screens/enfermedades/ovaricos/ovaricos.component';
 import { AlimentacionScreenComponent } from './screens/alimentacion-screen/alimentacion-screen.component';
+import { CajaDeComentariosComponent } from './components/caja-de-comentarios/caja-de-comentarios.component';
+import { MenuEnfermedadesComponent } from './components/menu-enfermedades/menu-enfermedades.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +41,9 @@ import { AlimentacionScreenComponent } from './screens/alimentacion-screen/alime
     TiroideComponent,
     OvaricosComponent,
     AlimentacionScreenComponent,
+    CajaDeComentariosComponent,
+    MenuEnfermedadesComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
