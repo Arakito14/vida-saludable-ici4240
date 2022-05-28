@@ -1,43 +1,16 @@
 <div class="col-2 row_men_enf">
-    <div class="card ">
-        <h3 class="card-header ">Menu de enfermedades</h3>
-            <!--
-            <div class="card-body lista_enf">
-                <ul class="list-group list-group-vertical">
-                    <li id="hov_li" class="list-group-item"><a [routerLink]="['cancer']">Cáncer de mama y útero</a></li>
-                    <li id="hov_li" class="list-group-item"><a [routerLink]="['colon']">Colon irritable</a></li>
-                    <li id="hov_li" class="list-group-item"><a [routerLink]="['cardiacos']">Problemas cardíacos</a></li>
-                    <li id="hov_li" class="list-group-item"><a [routerLink]="['depresion']">Depresión</a></li>
-                    <li id="hov_li" class="list-group-item"><a href="dolor_cabeza.html">Dolor de cabeza</a></li>
-                    <li class="list-group-item list-group-item-info"><a >Problemas de tiroide</a></li>
-                    <li id="hov_li" class="list-group-item"><a href="quistes_ova.html">Quistes ovaricos</a></li>
-                </ul>
-            </div>  
-            -->
-            <div class="list-group">
-                <a class="list-group-item list-group-item-action flex-column align-items-start active" [routerLink]="['cancer']">Cancer
-
-                </a>
-                <a class="list-group-item list-group-item-action flex-column align-items-start active" [routerLink]="['colon']">Colon
-                </a>
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">List group item heading</h5>
-                    <small>3 days ago</small>
-                  </div>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">List group item heading</h5>
-                    <small>3 days ago</small>
-                  </div>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">List group item heading</h5>
-                    <small>3 days ago</small>
-                  </div>
-                </a>
-                
-    </div>
+  <div class="card">
+    <h3 class="card-header">Menu de enfermedades</h3>
+    <div class="card-body lista_enf">
+        <ul class="list-group list-group-vertical">
+            <li class="list-group-item"><a [routerLink]="['/cancer']">Cáncer de mama y útero</a></li>
+            <li class="list-group-item"><a [routerLink]="['/colon']">Colon irritable</a></li>
+            <li class="list-group-item"><a [routerLink]="['/cardiacos']">Problemas cardíacos</a></li>
+            <li class="list-group-item"><a [routerLink]="['/depresion']">Depresión</a></li>
+            <li class="list-group-item"><a [routerLink]="['/cabeza']">Dolor de cabeza</a></li>
+            <li class="list-group-item"><a [routerLink]="['/tiroide']">Problemas de tiroide</a></li>
+            <li class="list-group-item"><a [routerLink]="['/ovaricos']">Quistes ovaricos</a></li>
+        </ul>
+    </div>             
+  </div>
 </div>
