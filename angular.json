@@ -31,9 +31,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.sass","sweetalert2/src/sweetalert2.scss"
             ],
-            "scripts": []
+            "scripts": ["src/app/components/caja-de-comentarios/app_enfer.js","node_modules/sweetalert2/dist/sweetalert2.js"]
           },
           "configurations": {
             "production": {
@@ -99,9 +99,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.sass","sweetalert2/src/sweetalert2.scss"
             ],
-            "scripts": []
+            "scripts": ["src/app/components/caja-de-comentarios/app_enfer.js","node_modules/sweetalert2/dist/sweetalert2.js"]
           }
         }
       }
