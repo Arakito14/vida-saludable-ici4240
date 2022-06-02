@@ -99,7 +99,6 @@ function funcion_en(entrada,nombre,comen,claves,j,boton){
                     
                     botones_int[z].disabled=true;
                     z++;
-                   
                 });
             }
             else{

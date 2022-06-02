@@ -18,6 +18,9 @@ export class CajaDeComentariosComponent implements OnInit {
         if(number==3){
           if(this.boton==true){this.boton=false} else{this.boton=true}
       }
+      if(number==2){
+        if(name=="admin"&&cla=='admin1'){this.boton=true}
+    }
         this.j++; 
         
     }

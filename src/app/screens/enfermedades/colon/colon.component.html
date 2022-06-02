@@ -1,9 +1,12 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-3">
+        <div class="d-none d-lg-block  col-lg-3">
             <app-caja-de-comentarios></app-caja-de-comentarios>
         </div>
-        <div class="col-6">
+        <div class="col-xs-12 d-block d-lg-none">
+            <app-menu-enfermedades></app-menu-enfermedades>
+        </div>
+        <div class="col-xs-12 col-lg-6 ">
             <div id="medio" class="card" >
                 <h1 class="card-header text-center">Colon Irritable</h1>              
                 <div class="card=body">
@@ -17,8 +20,11 @@
                 </div>  
             </div>
         </div>
-        <div class="col-3">
+        <div class="d-none d-lg-block  col-lg-3">
             <app-menu-enfermedades></app-menu-enfermedades>
+        </div>
+        <div class="col-xs-12 d-block d-lg-none">
+            <app-caja-de-comentarios></app-caja-de-comentarios>
         </div>
     </div>
 </div>
