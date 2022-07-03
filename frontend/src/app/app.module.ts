@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgxCaptchaModule } from 'ngx-captcha';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -26,6 +28,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { EmployeeComponent } from './components/employee/employee.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +50,8 @@ import { EmployeeComponent } from './components/employee/employee.component';
     CajaDeComentariosComponent,
     MenuEnfermedadesComponent,
     FooterComponent,
-    EmployeeComponent
+    EmployeeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +59,9 @@ import { EmployeeComponent } from './components/employee/employee.component';
     NgbModule,
     YouTubePlayerModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxCaptchaModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,104 @@
+<div class="row d-flex justify-content-center">
+    <div class="col-md-6">
+        <div class="card " id="ing_comen">
+            <div class="card-header">
+                <h3 class="alling-text-center fs-1 py-4 fw-bolder text-center text-dark">Ingreso</h3>
+            </div>
+
+            <div *ngIf="rol==='visita'">
+                <div class=" card-body">
+                    <div class=" row">
+                        <label for="usuario">Usuario</label>
+                        <input type="text" id="usuario" class="form-control" name="usuario" placeholder=" ej. pedro123"
+                            maxlength="10" required #name required>
+                        <label for="pass">Clave</label>
+                        <input type="password" id="pass" class="form-control" name="pass" #cla required>
+                    </div>
+                    <div class="row" id="btn_group1">
+                        <div class="btn btn-group" role="group">
+
+                            <button id="b_com" class="btn  btn-success  bg-black "
+                                (click)='iniciar_sesion(name.value,cla.value)'>Iniciar Sesion</button>
+                            <button id="b_elim" class="btn btn-danger  btn-small " (click)='Crearuser()'>Crear Usuario</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div *ngIf="abrir==='v_crear_usuario'">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" class="form-control" name="usuario" placeholder=" ej. pedro123"
+                    maxlength="10" required #name>
+                <label for="pass">Clave</label>
+                <input type="password" id="pass" class="form-control" name="pass" required #cla>
+
+                <form [formGroup]="aFormGroup">
+                    <ngx-recaptcha2 #captchaElem [siteKey]="siteKey" formControlName="recaptcha">
+                    </ngx-recaptcha2>
+                </form>
+
+                <div class="btn btn-group" role="group">
+                    <button id="b_enviar" type="submit" class="btn btn-primary bg-success btn-lg "
+                        (click)='Crearuser(name.value,cla.value)'>Crear</button>
+                    <button id="b_enviar" class="btn btn-primary bg-danger btn-lg " (click)='Atras()'>Atras</button>
+                </div>
+            </div>
+
+            <div *ngIf="rol==='admin'">
+                <div class=" card-body">
+                    <div class=" row">
+                        <h5> Nombre de usuario:<a id="Username">{{usur}}</a></h5>
+
+                        <div *ngIf="editar==='on'">
+                            <div class=" row">
+                                <select class="form-select form-select-lg mb-3" multiple
+                                    aria-label="multiple select example" aria-label="Ejemplo de .form-select-lg">
+                                    <option selected>Usuarios</option>
+                                    <option *ngFor="let users of usuarios" (click)="userr(users)">{{users}}</option>
+                                </select>
+                                <label for="comentario">Comentario</label>
+                                <textarea class="form-control" name="mensaje" id="mensaje"
+                                    placeholder="Ingrese su comentario" (change)="cambio_text(admin_mensa.value)"
+                                    #admin_mensa></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row" id="btn_group1">
+                        <div class="btn btn-group" role="group">
+                            <button id="b_com" class="btn  btn-secondary  bg-black " (click)='logOut()'>Cerrar sesion</button>
+                            <button id="b_elim" class="btn btn-danger  btn-small " (click)='editar_boton()'>Crear usuario</button>
+                            <button id="b_elim" class="btn btn-danger  btn-small " (click)='editar_boton()'>Editar Usuario</button>
+                            <button id="b_elim" class="btn btn-danger  btn-small ">Eliminar Usuario</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div *ngIf="rol==='user'">
+
+                <div class=" card-body">
+                    <div class=" row">
+                        <h5> Nombre de usuario:<a id="Username">{{usur}}</a></h5>
+                    </div>
+                    <div class=" row">
+                        <label for="comentario">Comentario</label>
+                        <textarea class="form-control" name="mensaje" id="mensaje" placeholder="Ingrese su comentario"
+                            #mensa></textarea>
+                    </div>
+                    <div class="row" id="btn_group1">
+                        <div class="btn btn-group" role="group">
+                            <button id="b_enviar" class="btn btn-primary bg-success btn-lg "
+                                (click)='enviarMensaje(mensa.value)'>Enviar</button>
+                            <button id="b_com" class="btn  btn-secondary  bg-black " (click)='logOut()'>LogOut</button>
+                            <button id="b_elim" class="btn btn-danger  btn-small ">Eliminar comentarios</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
