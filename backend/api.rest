@@ -1,0 +1,18 @@
+###
+
+GET http://localhost:4000/api/employees
+
+###
+
+POST http://localhost:4000/api/employees
+content-Type: application/json
+
+{
+    "name": "jotaro",
+    "rut": "1",
+    "rol": "dr",
+    "contacto": "4000"
+}
+
+###
+DELETE http://localhost:4000/api/employees/62c0cd1e44cfb77c7b87f66e

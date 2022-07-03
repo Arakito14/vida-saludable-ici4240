@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,SAAS,CAAC;EACN,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,GAAG;CAAG",
-    "sources": [
-        "ovaricos.component.sass"
-    ],
-    "names": [],
-    "file": "ovaricos.component.css"
-}
