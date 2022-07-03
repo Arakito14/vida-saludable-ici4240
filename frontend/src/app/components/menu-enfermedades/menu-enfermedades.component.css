@@ -1,0 +1,21 @@
+.row_men_enf .card .card-header {
+  text-align: center;
+}
+
+.row_men_enf .card .lista_enf ul li {
+  text-align: center;
+}
+
+.row_men_enf .card .lista_enf ul li:hover {
+  background-color: green;
+}
+
+.row_men_enf .card .lista_enf ul li:hover a {
+  color: white;
+}
+
+.row_men_enf .card .lista_enf ul a {
+  color: black;
+  text-decoration: none;
+}
+/*# sourceMappingURL=menu-enfermedades.component.css.map */

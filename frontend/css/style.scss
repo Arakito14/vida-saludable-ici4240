@@ -1,0 +1,168 @@
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@mixin lista{
+    .list-group {
+        justify-content: center;
+       
+        li{
+            &:hover{
+                background-color: blue;
+                a {
+                    color: white;  
+                }
+                
+            }
+           
+            width: 15%;
+            text-align: center;
+            background-color:aquamarine;
+            a {
+                text-decoration: none;
+                color: black;  
+                
+            }
+        }
+    }
+}
+
+.lista_nav{
+    padding-bottom: 2%;
+    @include lista;
+    
+  }
+
+.lista_nav_ef{
+    padding-bottom: 2%;
+ 
+    @include lista;
+  }
+
+.row_men_enf{
+    .card{
+        .card-header{
+            text-align: center;
+        }
+
+        .lista_enf{
+                ul{
+                    li{
+                        &:hover{
+                            background-color: green;
+                            a {
+                                color: white;  
+                            }
+                        }
+
+                        a{
+                            color:black;
+                            text-decoration: none;
+                           
+                        }
+                    } 
+                }
+            }
+    }      
+}
+
+  .form_1{
+    justify-content: center;
+    .formulario{
+        justify-content: center;
+        max-width: 25%;
+    }
+}
+ .card-header{
+     h2{
+        text-align: center;   
+    
+     }
+     
+     h1{
+            text-align: center;  
+         }    
+    }
+
+.row_jer{
+    justify-content:center;
+    .card{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin:auto;
+        width:60%;
+        .card-body{
+            .btn-group {
+                padding-left: 35%;
+                
+                .btn{
+                    background-color: rgba(48, 156, 199, 0.918);
+                    a{
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+               
+            }
+            ol{
+                li{
+                    a{
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+}  
+.row_ali{
+    .card{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin:auto;
+            width:60%;
+    }
+}
+
+
+ .index_row{
+     .col{
+         width: 70%;
+     }
+ }
+.menu_enf{
+    
+    .card{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin:auto;
+        width:60%;
+        .bot_enf{
+            .row{
+              .btn{
+                &:hover {
+                    background-color: red;
+                    a {
+                        color: white;  
+                    }
+                }
+                   a{
+                       font-size: larger;
+                       color: black;
+                       text-decoration: none;
+                       
+                   }
+               }
+           }
+        }
+    
+}
+ 
+}
+.row_pre{
+        justify-content:center;
+        .card{
+            width:60%;
+                
+            }
+   
+}

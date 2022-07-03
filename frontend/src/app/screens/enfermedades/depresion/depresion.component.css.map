@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAC;EACN,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,GAAG;CAAG",
+    "sources": [
+        "depresion.component.sass"
+    ],
+    "names": [],
+    "file": "depresion.component.css"
+}
