@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Employee } from '../../models/employee'
 import { EmployeeService } from 'src/app/services/employee.service';
+import {MatTableModule} from '@angular/material/table';
 
 @Component({
   selector: 'app-employee',
@@ -47,8 +48,11 @@ export class EmployeeComponent implements OnInit {
       });
   }
 
-  updateEmployee(rut:string){
-    
+  onEdit(item: any,field: string) {
+    debugger; 
+    item.editFieldName = field;
   }
-
+  close(item: any) {
+    item.editFieldName = '';
+  }
 }

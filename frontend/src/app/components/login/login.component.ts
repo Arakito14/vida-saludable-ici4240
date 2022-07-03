@@ -59,14 +59,7 @@ mensaje_admin:string="";
     }
   }
 
-  Eliminar_comen_unico(id:string,id_persona:string){
-    if(id_persona===this.usur){
-      this.listausuarios.Eliminar_comentario(window.location.pathname,id);
-    }
-   else if("admin"===this.usur &&this.rol==="admin"){
-      this.listausuarios.Eliminar_comentario(window.location.pathname,id);
-   }
-  }
+ 
 
   iniciar_sesion(name:string ,cla:string){
     let  usuario:Usuario;
@@ -94,20 +87,14 @@ mensaje_admin:string="";
     this.rol="visita";
     this.listausuarios.ac_userSet="visita";
     this.editar="off"
+    this.opcion_admin="off"
   }
-  editar_boton(){
-    if(this.editar!="on")
-    {
-      this.editar="on"
-      this.usuarios=this.listausuarios.obtener_users();
-    }
-    else {
-      this.editar="off";
-    }
-  }
+
+
   userr(dato:string){
     this.user_final=dato;
   }
+
   edita_coment_user(id_inicio:string,id_mensa:string){
     if(id_inicio!==id_mensa){this.listausuarios.cambiar_dominio(id_inicio,this.user_final,id_mensa);}
     else{
@@ -143,9 +130,13 @@ crear_useradmin(name:string,pass:string,rol:string,numero:number){
   this.service_backend.createEmployee({name,pass,rol,numero});
 }
 
+admin_editar(){
+  this.opcion_admin="editar";
+}
 
-
-
+admin_eliminar(){
+  this.opcion_admin="eliminar";
+}
 
 
 

@@ -75,8 +75,8 @@
                         <div class="btn btn-group" role="group">
                             <button id="b_com" class="btn  btn-secondary  bg-black " (click)='logOut()'>Cerrar sesion</button>
                             <button id="b_elim" class="btn btn-danger  btn-small " (click)='admin_crear()'>Crear usuario</button>
-                            <button id="b_elim" class="btn btn-danger  btn-small " (click)='editar_boton()'>Editar Usuario</button>
-                            <button id="b_elim" class="btn btn-danger  btn-small " (click)='editar_boton()'>Eliminar Usuario</button>
+                            <button id="b_elim" class="btn btn-danger  btn-small " (click)='admin_editar()'>Editar Usuario</button>
+                            <button id="b_elim" class="btn btn-danger  btn-small " (click)='admin_eliminar()'>Eliminar Usuario</button>
                         </div>
                     </div>
 
@@ -132,7 +132,7 @@
             <label for="exampleFormControlSelect1">Example multiple select</label>
             <select multiple class="form-control" id="exampleFormControlSelect2" #rol>
               <option value="user" >Usuario</option>
-              <option value="admin" l>Administrador</option>
+              <option value="admin" >Administrador</option>
             </select>
           </div>
           <div class="form-group">
