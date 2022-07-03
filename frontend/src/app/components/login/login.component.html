@@ -1,11 +1,12 @@
 <div class="row d-flex justify-content-center">
     <div class="col-md-6">
         <div class="card " id="ing_comen">
-            <div class="card-header">
-                <h3 class="alling-text-center fs-1 py-4 fw-bolder text-center text-dark">Ingreso</h3>
-            </div>
+            
 
             <div *ngIf="rol==='visita'">
+                <div class="card-header">
+                    <h3 class="alling-text-center fs-1 py-4 fw-bolder text-center text-dark">Ingreso</h3>
+                </div>
                 <div class=" card-body">
                     <div class=" row">
                         <label for="usuario">Usuario</label>
@@ -19,13 +20,16 @@
 
                             <button id="b_com" class="btn  btn-success  bg-black "
                                 (click)='iniciar_sesion(name.value,cla.value)'>Iniciar Sesion</button>
-                            <button id="b_elim" class="btn btn-danger  btn-small " (click)='Crearuser()'>Crear Usuario</button>
+                            <button id="b_elim" class="btn btn-danger  btn-small " (click)='Crearuser()'>Registrarse</button>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div *ngIf="abrir==='v_crear_usuario'">
+                <div class="card-header">
+                    <h3 class="alling-text-center fs-1 py-4 fw-bolder text-center text-dark">Crear cuenta</h3>
+                </div>
                 <label for="usuario">Usuario</label>
                 <input type="text" id="usuario" class="form-control" name="usuario" placeholder=" ej. pedro123"
                     maxlength="10" required #name>
@@ -33,8 +37,8 @@
                 <input type="password" id="pass" class="form-control" name="pass" required #cla>
 
                 <form [formGroup]="aFormGroup">
-                    <ngx-recaptcha2 #captchaElem [siteKey]="siteKey" formControlName="recaptcha">
-                    </ngx-recaptcha2>
+                    <ngx-recaptcha2 #captchaElem [siteKey]="siteKey" formControlName="recaptcha" required>
+                    </ngx-recaptcha2 >
                 </form>
 
                 <div class="btn btn-group" role="group">
@@ -45,6 +49,9 @@
             </div>
 
             <div *ngIf="rol==='admin'">
+                <div class="card-header">
+                    <h3 class="alling-text-center fs-1 py-4 fw-bolder text-center text-dark">Perfil de administrador</h3>
+                </div>
                 <div class=" card-body">
                     <div class=" row">
                         <h5> Nombre de usuario:<a id="Username">{{usur}}</a></h5>
@@ -67,11 +74,18 @@
                     <div class="row" id="btn_group1">
                         <div class="btn btn-group" role="group">
                             <button id="b_com" class="btn  btn-secondary  bg-black " (click)='logOut()'>Cerrar sesion</button>
-                            <button id="b_elim" class="btn btn-danger  btn-small " (click)='editar_boton()'>Crear usuario</button>
+                            <button id="b_elim" class="btn btn-danger  btn-small " (click)='admin_crear()'>Crear usuario</button>
                             <button id="b_elim" class="btn btn-danger  btn-small " (click)='editar_boton()'>Editar Usuario</button>
-                            <button id="b_elim" class="btn btn-danger  btn-small ">Eliminar Usuario</button>
+                            <button id="b_elim" class="btn btn-danger  btn-small " (click)='editar_boton()'>Eliminar Usuario</button>
                         </div>
                     </div>
+
+                       <div class="row"> 
+                        <div *ngIf="opcion_admin==='crear';then crearUser"></div>
+                        <div *ngIf="opcion_admin==='editar'"></div>
+                        <div *ngIf="opcion_admin==='eliminar'"></div>
+                        <div *ngIf="opcion_admin==='off'"><app-employee></app-employee></div>
+                       </div>
                 </div>
             </div>
 
@@ -88,17 +102,57 @@
                     </div>
                     <div class="row" id="btn_group1">
                         <div class="btn btn-group" role="group">
-                            <button id="b_enviar" class="btn btn-primary bg-success btn-lg "
-                                (click)='enviarMensaje(mensa.value)'>Enviar</button>
-                            <button id="b_com" class="btn  btn-secondary  bg-black " (click)='logOut()'>LogOut</button>
-                            <button id="b_elim" class="btn btn-danger  btn-small ">Eliminar comentarios</button>
+                            <button id="b_enviar" class="btn btn-primary bg-success btn-lg ">Editar perfil</button>
+                            <button id="b_elim" class="btn btn-danger  btn-small ">Eliminar Cuenta</button>
+                            <button id="b_com" class="btn  btn-secondary  bg-black " (click)='logOut()'>LogOut</button> 
                         </div>
                     </div>
                 </div>
             </div>
 
-
+            <div *ngIf=""> </div>
 
         </div>
     </div>
 </div>
+
+
+<ng-template #crearUser>
+    <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nombre</label>
+          <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Ingrese su nombre" #name_cre>
+          <small class="form-text text-muted">Ingrese su nombre completo</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" #pass_cre>
+        </div>
+         <div class="form-group">
+            <label for="exampleFormControlSelect1">Example multiple select</label>
+            <select multiple class="form-control" id="exampleFormControlSelect2" #rol>
+              <option value="user" >Usuario</option>
+              <option value="admin" l>Administrador</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Numero</label>
+            <input type="password" class="form-control"  placeholder="9********" #numero>
+          </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="crear_useradmin(name_cre.value,pass_cre.value,rol.value,numero.valueAsNumber)">Submit</button>
+      </form>
+</ng-template>
+
+<ng-template #editar_user>
+        <div class="form-inline">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Rut</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Ingrese el rut del user a editar" #name_cre>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+</ng-template>

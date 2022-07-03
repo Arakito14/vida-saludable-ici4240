@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { Lista_usuarios,Mensaje,Usuario,UsuarioService } from '../../services/usuario.service';
 import { ReCaptchaV3Service } from 'ngx-captcha';
 import { FormBuilder,FormGroup ,Validators} from '@angular/forms';
+import {EmployeeService} from '../../services/employee.service';
 
 @Component({
   selector: 'app-login',
@@ -13,13 +14,14 @@ import { FormBuilder,FormGroup ,Validators} from '@angular/forms';
 export class LoginComponent implements OnInit {
 public aFormGroup: FormGroup;
 
-constructor(private listausuarios:UsuarioService,private formBuilder: FormBuilder) { 
+constructor(private listausuarios:UsuarioService,private formBuilder: FormBuilder,private service_backend:EmployeeService) { 
   this.aFormGroup = this.formBuilder.group({
     recaptcha: ['', Validators.required]
   });
 }
 siteKey:string="6LeR2LsgAAAAAHVv7dKA91xlFuqittJOwhy1-xpH";
 
+opcion_admin="off";
 rol:string="visita";
 usur:string="";
 abrir:string="";
@@ -70,13 +72,13 @@ mensaje_admin:string="";
     let  usuario:Usuario;
     usuario=this.listausuarios.get_Usuario(name);
     console.log(usuario.id_user,usuario.clave_user,usuario.rol_user);
-    if(usuario!=null && usuario?.clave_user===cla &&usuario.id_user!=='admin')
+    if(usuario!=null && usuario?.clave_user===cla &&usuario.id_user!=='admin' && usuario.rol_user==="user")
     {
       this.rol='user';
       this.usur=usuario.id_user;
       this.listausuarios.ac_userSet=usuario.id_user;
     }
-    else if(usuario?.clave_user===cla && usuario.id_user==='admin'){
+    else if(usuario?.clave_user===cla && usuario.rol_user==='admin'){
       this.rol='admin';
       this.usur=usuario.id_user;
       this.listausuarios.ac_userSet=usuario.id_user;
@@ -87,17 +89,6 @@ mensaje_admin:string="";
     }
   }
 
-
-
-  enviarMensaje(mens:string){
-    let  usuario:Usuario;
-    let date:Date=new Date();
-    usuario=this.listausuarios.get_Usuario(this.usur);
-
-    usuario.mensajes_set={id:mens+usuario.lenght_mapa_mensajes,user:usuario.id_user,mensaje:mens,pagina:window.location.pathname,posicion:date};
-    this.listausuarios.mensajes_Set=usuario.mensajes_user.get(mens+(usuario.lenght_mapa_mensajes-1))!;
-    this.mensajes_pagina=this.listausuarios.get_mensajes_paginas(window.location.pathname);
-  }
 
   logOut(){
     this.rol="visita";
@@ -132,8 +123,30 @@ mensaje_admin:string="";
       this.listausuarios.cambiar_mensaje(id_inicio,id_mensa,this.mensaje_admin);
   }
   Atras(){
-    this.rol="visita";
-    this.listausuarios.ac_userSet="visita";
-    this.abrir="";
+      if(this.abrir==="v_crear_usuario" && this.rol===""){
+        this.rol="visita";
+        this.listausuarios.ac_userSet="visita";
+        this.abrir="";
+      }
+      //else if(){
+
+     // }
+          
   }
+
+//Funciones de administrador
+admin_crear(){
+  this.opcion_admin="crear";
+}
+
+crear_useradmin(name:string,pass:string,rol:string,numero:number){
+  this.service_backend.createEmployee({name,pass,rol,numero});
+}
+
+
+
+
+
+
+
 }

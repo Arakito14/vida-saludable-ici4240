@@ -36,4 +36,19 @@ export class EmployeeComponent implements OnInit {
     this.currentIndex = -1;
   }
 
+  getEmployee(id: string): void{
+    this.employeService.getEmployee(id)
+      .subscribe({
+        next: (data) => {
+          this.currentEmployee = data;
+          console.log(data);
+        },
+        error: (e) => console.error(e)
+      });
+  }
+
+  updateEmployee(rut:string){
+    
+  }
+
 }

@@ -1,3 +1,20 @@
-<div *ngFor="let employee of employees">
-    <a>{{employee.name}}</a>
+<div class=empleados>
+    <table class="table table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Rut</th>
+                <th scope="col">Rol</th>
+                <th scope="col">Contacto</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let employee of employees">
+            <tr (click)="updateEmployee(employee.rut!)">
+                <td>{{employee.name}}</td>
+                <td>{{employee.rut}}</td>
+                <td>{{employee.rol}}</td>
+                <td>{{employee.contacto}}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
