@@ -1,0 +1,90 @@
+<div *ngIf="viewMode; else editable">
+    <div *ngIf="currentEmployee._id">
+      <h4>Empleado</h4>
+      <div>
+        <label><strong>Nombre: </strong></label> {{ currentEmployee.name }}
+      </div>
+      <div>
+        <label><strong>Rut: </strong></label>
+        {{ currentEmployee.rut }}
+      </div>
+      <div>
+        <label><strong>Ocupación: </strong></label>
+        {{ currentEmployee.rol }}
+      </div>
+      <a routerLink="/personal/{{ currentEmployee._id }}">
+        <button class = "btn btn-primary">Editar</button>  
+      </a>
+    </div>
+    <div *ngIf="!currentEmployee">
+      <br />
+      <p>Seleccione empleado</p>
+    </div>
+  </div>
+  <ng-template #editable>
+    <div *ngIf="currentEmployee._id" class="edit-form">
+      <h4>Empleado</h4>
+      <form>
+        <div class="form-group">
+          <label for="title">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            [(ngModel)]="currentEmployee.name"
+            name="name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="description">Rut</label>
+          <input
+            type="text"
+            class="form-control"
+            id="rut"
+            [(ngModel)]="currentEmployee.rut"
+            name="rut"
+          />
+        </div>
+        <div class="form-group">
+            <label for="description">Ocupacion</label>
+            <input
+              type="text"
+              class="form-control"
+              id="ocupacion"
+              [(ngModel)]="currentEmployee.rol"
+              name="ocupacion"
+            />
+          </div>
+          <div class="form-group">
+            <label for="description">Contacto</label>
+            <input
+              type="text"
+              class="form-control"
+              id="contacto"
+              [(ngModel)]="currentEmployee.contacto"
+              name="contacto"
+            />
+          </div>
+      </form>
+      <button
+        type="submit"
+        class="btn btn-success p-3 w-25"
+        (click)="employeeUpdated()"
+      >
+        Actualizar
+      </button>
+      <button class="btn btn-danger p-3 w-25" (click)="employeeDeleted()">
+        Eliminar
+      </button>
+      <a routerLink="/personal">
+        <button class = "btn btn-primary p-3 w-25">Regresar</button>  
+      </a>
+      
+      <p>{{ message }}</p>
+    </div>
+    <div *ngIf="!currentEmployee._id">
+      <br />
+      <p>No existe empleado</p>
+    </div>
+  </ng-template>
+  

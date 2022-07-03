@@ -14,6 +14,7 @@ import { OvaricosComponent } from './screens/enfermedades/ovaricos/ovaricos.comp
 import { TiroideComponent } from './screens/enfermedades/tiroide/tiroide.component';
 import { EmployeeComponent } from './components/employee/employee.component';
 import { LoginComponent } from './components/login/login.component';
+import { EmployeeDetailsComponent } from './components/employee-details/employee-details.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -30,7 +31,8 @@ const routes: Routes = [
   { path: 'tiroide', component: TiroideComponent},
   { path: 'ovaricos', component: OvaricosComponent},
   { path: 'personal', component: EmployeeComponent},
-  { path: 'ingreso', component: LoginComponent}
+  { path: 'ingreso', component: LoginComponent},
+  { path: 'personal/:_id', component: EmployeeDetailsComponent}
 ];
 
 @NgModule({

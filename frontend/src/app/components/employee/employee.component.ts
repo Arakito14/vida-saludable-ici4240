@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Employee } from '../../models/employee'
 import { EmployeeService } from 'src/app/services/employee.service';
-import {MatTableModule} from '@angular/material/table';
 
 @Component({
   selector: 'app-employee',
@@ -13,7 +12,7 @@ export class EmployeeComponent implements OnInit {
   employees?: Employee[];
   currentEmployee: Employee = {};
   currentIndex = -1;
-  title = '';
+  name = '';
 
   constructor(private employeService: EmployeeService) { }
 
@@ -47,12 +46,9 @@ export class EmployeeComponent implements OnInit {
         error: (e) => console.error(e)
       });
   }
+  secActiveEmployee(employee: Employee, index: number): void {
+    this.currentEmployee = employee;
+    this.currentIndex = index;
+  }
 
-  onEdit(item: any,field: string) {
-    debugger; 
-    item.editFieldName = field;
-  }
-  close(item: any) {
-    item.editFieldName = '';
-  }
 }

@@ -29,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { EmployeeComponent } from './components/employee/employee.component';
 import { LoginComponent } from './components/login/login.component';
+import { EmployeeDetailsComponent } from './components/employee-details/employee-details.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { LoginComponent } from './components/login/login.component';
     MenuEnfermedadesComponent,
     FooterComponent,
     EmployeeComponent,
-    LoginComponent
+    LoginComponent,
+    EmployeeDetailsComponent
   ],
   imports: [
     BrowserModule,
