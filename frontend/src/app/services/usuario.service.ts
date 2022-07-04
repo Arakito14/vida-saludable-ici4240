@@ -1,6 +1,4 @@
-import { ThisReceiver } from '@angular/compiler';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
 
 export class Lista_usuarios{
   private mapa=new Map<string,Usuario>();
@@ -33,7 +31,16 @@ getUser(id:string){
   return user;
  }
   
-};
+}
+
+eliminar_usuario(id:string){
+  if(this.mapa.has(id)===true){
+    this.mapa.delete(id);
+    
+  }
+}
+
+
 }
 
 
@@ -43,9 +50,13 @@ export class Usuario{
 constructor(){
 }
   private id:string="visita";
+  private name:string="";
+  private rut:string="";
   private clave?:string|null;
    rol:string="visita";
+  private numero:string='';
   private mensajes=new Map<string,Mensaje>();
+
 
 crearUser(id:string,clave:string,rol?:string){
 this.id=id;
@@ -53,9 +64,19 @@ this.clave=clave;
 this.rol=rol!;
 }
 
+get  numero_get(){ return this.numero}
+set numero_set(contacto:string){ this.numero=contacto;}
+
+get name_get(){return this.name}
+
+get rut_get(){ return this.rut}
+
+set name_set(name:string) {  this.name=name}
+set rut_set(rut:string) { this.rut=rut}
 
 get id_user(){
   return this.id;
+
 };
 
 get clave_user(){
@@ -183,5 +204,11 @@ cambiar_mensaje(id_inicio:string,id_mensaje:string,mensaje_men:string){
       }
   });
 }
+
+eliminar_user(id:string){
+  this.listaUsers.eliminar_usuario(id);
+}
+  
+
 }
 

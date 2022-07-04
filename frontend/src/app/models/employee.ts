@@ -1,5 +1,6 @@
 export class Employee {
     name?: string;
+    clave?: string;
     rut?: string;
     rol?: string;
     contacto?: string;

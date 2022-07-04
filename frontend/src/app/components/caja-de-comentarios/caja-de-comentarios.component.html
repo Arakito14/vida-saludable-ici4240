@@ -1,66 +1,95 @@
 <div class="container-fluid">
 
-        <div class="row">
-                <div class="col-md-12 " id="sidebarL">
+    <div class="row">
+            <div class="col-md-12 " id="sidebarL">
 
-                    <div class="row d-flex justify-content-center">
-                        <div class="card " id="ing_comen">
-                            <div class="card-header">
-                                    <h3 class="alling-text-center fs-1 py-4 fw-bolder text-center text-dark">Comentarios</h3>
+                <div class="row d-flex justify-content-center">
+                    <div *ngIf="rol==='user'">
+
+                        <div class=" card-body border" id="pest_us">
+                            <div class=" row">
+                                <h5 id="Username" class="card-header"> Nombre de usuario:<a id="Username">{{usur}}</a></h5>
                             </div>
-                            <div class=" card-body" >
-                                    <div class=" row" > 
-                                        <label for="usuario">Nombre</label>
-                                        <input type="text" id="usuario" class="form-control" name="usuario" placeholder=" ej. pedro123" maxlength="10" required #name>
-                                        <label for="pass">Clave</label>
-                                        <input type="password" id="pass" class="form-control" name="pass"  #cla>
+                            <div class=" row card-body ">
+                                <label for="comentario" id="come_user">Comentario</label>
+                                <textarea class="form-control" name="mensaje" id="mensaje" placeholder="Ingrese su comentario"#mensa></textarea>
+                            </div>
+                            <div class="row row card-footer" id="btn_group_user">
+                                <div class="btn btn-group" role="group">
+                                    <button id="b_enviar" class="btn btn-primary bg-success btn-lg "(click)='enviarMensaje(mensa.value)'>Enviar</button> 
+                                   
+                                    <button id="b_elim" class="btn btn-danger  btn-small " (click)='Eliminarcomentarios_user()'>Eliminar comentario</button>
                                 </div>
-                                <div class=" row" > 
-                                    <label for="comentario">Comentario</label>
-                                    <textarea class ="form-control" name="mensaje" id="mensaje" placeholder="Ingrese su comentario" #mensa></textarea>
-                                </div>
-                                <div class="row" id="btn_group1">
-                                        <div class="btn btn-group"  role="group"> 
-                                            <button id="b_enviar" class="btn btn-primary bg-success btn-lg "(click)='funcion1(1,name.value,mensa.value,cla.value)'>Enviar</button> 
-                                            <button id="b_com" class="btn  btn-secondary  bg-black "(click)='funcion1(2,name.value,mensa.value,cla.value)'>Comprobar</button> 
-                                            <button id="b_elim" class="btn btn-danger  btn-small invisible"(click)='funcion1(3,name.value,mensa.value,cla.value)'>Eliminar comentarios</button> 
-                                        </div>  
-                                </div>              
                             </div>
                         </div>
-                </div>
-                <div class="row">
-                    <div class="card">
-                            <div class="card-header aling-text-center" >
-                                <h1 class=" fs-2 fw-bolder card-header">Caja de comentarios</h1>
-                            </div>
-                            <div class="card-body" id="comentar">
-                                
-                                    <template id="comen_1">
-                                        <a  class="list-group-item list-group-item-action " aria-current="true" >
-                                            <div class="row d-flex w-100 justify-content-md-between">
-                                                <div class="col-xs-4 col-md-6 ">
-                                                    <h5 class="mb-1 fs-4"></h5>
-                                                </div>
-                                                <div class="col-xs-3 col-md-1 " >
-                                                    <button class="btn btn-danger me-md-2 " type="button" id="b_cerrar"  value="" disabled >X</button>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col">
-                                                <p class="text-break" id="p_c"></p>
+                    </div>
+
+                    <div *ngIf="rol==='admin'">
+                        <div class=" card-body " id="pest_ad">
+                            <div class=" row card" > 
+                                <h5 id="Username" class="card-header"> Nombre de usuario:<a>{{usur}}</a></h5>
+                                <div *ngIf="editar==='on'" id="usuarios_selec">
+                                    <h5 class="card-header"><a>Usuarios inscritos</a></h5>
+                                    <div class=" row" > 
+                                        <select class="form-select form-select-lg mb-3" multiple aria-label="multiple select example"  aria-label="Ejemplo de .form-select-lg" >
+                                            
+                                                <option *ngFor="let users of usuarios" (click)="userr(users!)">{{users}}</option>
+                                      </select>
+                                        <label for="comentario">Comentario</label>
+                                        <textarea class ="form-control" name="mensaje"  placeholder="Ingrese su comentario" (change)="cambio_text(admin_mensa.value)" #admin_mensa></textarea>
+                                    </div>
+                                </div>
+                    
+                                </div>
+
+                                    <div class="row card-footer" id="btn_group_ad">
+                                            <div class="btn btn-group"  role="group">  
+                                                <button id="b_elim_d" class="btn btn  btn-small "(click)='Eliminarcomentarios_user()'>Eliminar comentarios</button> 
+                                                <button id="b_edit_d" class="btn btn  btn-small "(click)='editar_boton()'>Editar comentarios</button> 
+                                            </div>  
+                                    </div>              
+                            </div>  
+                    </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="card">
+                        <div class="card-header aling-text-center" >
+                            <h1 class=" fs-2 fw-bolder " style="text-align: center;">Caja de comentarios</h1>
+                        </div>
+                        <div class="card-body" id="comentar">
+                            <div *ngFor="let mensaje of mensajes_pagina">
+                                <a  class="list-group-item list-group-item-action " aria-current="true" id="{{mensaje.id}}">
+                                    <div class="row d-flex w-100 justify-content-md-between">
+                                        <div class="col-xs-4 col-md-6 ">
+                                            <h5 class="mb-1 fs-4">{{mensaje.user}}</h5>
+                                        </div>
+                                        <div class="col-xs-3 col-md-1 " >
+                                            <div *ngIf="editar==='off'"><button class="btn btn-danger me-md-2 " type="button" id="b_cerrar"  value="{{mensaje.id}}" disabled (click)="Eliminar_comen_unico(mensaje.id,mensaje.user)" >X</button></div>
+                                            <div *ngIf="editar==='on';">
+                                                <button class="btn btn-danger me-md-2 " type="button"   value="{{mensaje.id}}" (click)="edita_coment_texto(mensaje.user,mensaje.id)" >Editar comentario</button>
+                                                <button class="btn btn-danger me-md-2 " type="button"   value="{{mensaje.id}}" (click)="edita_coment_user(mensaje.user,mensaje.id)" >Editar usuario</button>
                                             </div>
 
-                                            </div> 
-                                        </a>
-                                    </template>
-                                
-                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                        <p class="text-break" id="p_c">{{mensaje.mensaje}}</p>
+                                    </div>
                         
-                    </div>
-                    <div class="bg-dark ">---------------------------------------</div>
+                                    </div> 
+                                </a>
+                            </div>
+                            
+                        </div>
+                    
                 </div>
-         </div>     
-    </div>
+                <div class="bg-dark ">---------------------------------------</div>
+            </div>
+     </div>     
+</div>
 
 </div>

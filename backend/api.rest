@@ -1,17 +1,40 @@
 ###
-
 GET http://localhost:4000/api/employees
 
 ###
-
 POST http://localhost:4000/api/employees
 content-Type: application/json
 
 {
-    "name": "jotaro",
+    "name": "admin",
+    "clave": "admin",
+    "rut": "11111111-1",
+    "rol": "administrador",
+    "contacto": "56111111111"
+}
+
+###
+POST http://localhost:4000/api/employees
+content-Type: application/json
+
+{
+    "name": "usuario",
+    "clave": "1",
     "rut": "1",
-    "rol": "dr",
-    "contacto": "4000"
+    "rol": "usuario",
+    "contacto": "56222222222"
+}
+
+###
+POST http://localhost:4000/api/employees
+content-Type: application/json
+
+{
+    "name": "josesito",
+    "clave": "password",
+    "rut": "1",
+    "rol": "josesito",
+    "contacto": "1"
 }
 
 ###

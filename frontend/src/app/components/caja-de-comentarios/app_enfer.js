@@ -121,7 +121,31 @@ function funcion_en(entrada,nombre,comen,claves,j,boton){
                }
            
     });
-            
+          
+    
 };
+
+function botones_act_Desac ()
+{
+    if(event.target.id!='b_cerrar')
+        {       
+                var botones_int=document.querySelectorAll("#b_cerrar",".boton");
+                var z=0;
+                botones_int.forEach(function(){
+                    botones_int[z].disabled=false;
+                     z++;
+                    });
+              setTimeout(()=>{
+                var botones_int=document.querySelectorAll("#b_cerrar",".boton");
+                var z=0;
+                botones_int.forEach(function(){
+                    botones_int[z].disabled=true;
+                    z++;
+                });
+                   
+              },10000)
+                    
+        }
+}
 
 

@@ -8,7 +8,7 @@ const URL_API = 'http://localhost:4000/api/employees';
   providedIn: 'root'
 })
 export class EmployeeService {
-
+ 
 
   constructor (private http: HttpClient) { }
   getEmployees(): Observable<Employee[]>{
@@ -18,6 +18,7 @@ export class EmployeeService {
     return this.http.get(`${URL_API}/${id}`);
   }
   createEmployee(data: any): Observable<any>{
+    console.log(data)
     return this.http.post(URL_API, data)
   }
   editEmployee(id: any, data: any): Observable<any>{
@@ -26,4 +27,6 @@ export class EmployeeService {
   deleteEmployee(id: any): Observable<any>{
     return this.http.delete(`${URL_API}/${id}`);
   }
+
+
 }
