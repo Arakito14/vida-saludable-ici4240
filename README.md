@@ -33,10 +33,10 @@
 1. Ingresar al localhost a traves de la extension MongoDB en VS Code  
 `mongodb://localhost`  
   
-2. Abrir el servidor NodeJS
+2. Abrir el servidor NodeJS  
 `npm run dev`  
   
-3. Abrir el host del sitio con Angular
+3. Abrir el host del sitio con Angular  
 `ng serve`
 
 Los datos podran ser enviados al servidor a traves de un cliente API como Insomnia o utilizando el archivo backend/api.rest con la extension REST Client, el cual incluye algunos ejemplos.  
