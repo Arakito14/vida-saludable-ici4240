@@ -41,4 +41,10 @@
 
 Los datos podran ser enviados al servidor a traves de un cliente API como Insomnia o utilizando el archivo backend/api.rest con la extension REST Client, el cual incluye algunos ejemplos.  
   
+## Integrantes  
+  
+Nicolas Bobadilla  
+Matías Mujica  
+Mauricio Díaz
+
 
